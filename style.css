@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#back{
+	background: url('logo-7.png');
+	height: 100vh;
+	width: 100%;
+}
+
+.info{
+	color: whitesmoke;
+}
+.info:hover{
+	font-size: 20px;;
+	color: black;
+}
+body{
+	text-align: center;
+	position: relative;
+}
+
+.input{
+	font-size: 20px;
+	color: red;
+	display: flex;
+}
+#enter-2,#districts{
+	margin-left: 50px;;
+}
+
+#logo{
+	width: 100%;
+}
+
+.main{
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 5px solid black;
+	width: 400px;
+	height: 680px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center; 
+	background-color: azure;
+}
+
+
+.search{
+	width: 120px;
+}
+
+
+.recover,.confirmed,.active,.death{
+	height: 15%;
+	width: 70%;
+	border: 2px solid black;
+	border-bottom-style: inset;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.recover{
+	border-bottom-color:#32CD32;
+	border-bottom-width: 10px; 
+	color:#32CD32;
+}
+
+.recover:hover{
+	border-bottom-color: black;
+	border-bottom-width: 2px; 
+	background-color:#32CD32;
+	color: white;
+}
+
+.confirmed{
+	border-bottom-color: orange;
+	border-bottom-width: 10px;
+	color: orange;
+}
+
+.confirmed:hover{
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	background-color: orange;
+	color: white;
+}
+
+.ib  {
+	display: inline-block;
+}
+
+span{
+	
+}
+
+.active{
+	border-bottom-color: #f0f057;
+	border-bottom-width: 10px;
+	color: #f0f057;
+}
+
+.active:hover{
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	background-color:#f0f057;
+	color: white;
+}
+
+.death{
+	border-bottom-color:red;
+	border-bottom-width: 10px;
+	color:red;
+}
+
+.death:hover{
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	background-color: red;
+	color: white;
+}
+
+@media screen and (max-width: 480px) {
+	.main {
+		width: 90%;
+		
+	}
+
+	#back {
+		background: url('logo-5.jpg');
+		background-position: center;
+		background-size: contain;
+	}
+
+	.recover,.confirmed,.active,.death {
+		width: 90%;
+	}
+}
+
+
+
+

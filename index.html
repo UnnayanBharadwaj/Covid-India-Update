@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.6/countUp.umd.js" integrity="sha512-P3Zs/H1K66KKfwzXBZPoUTZmffTYTltxp2sPq6fmdVipwme2l2wWj0DU6iGPIB1mUoX1cq/FC9JhqJ4QJXCcEg==" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="back"></div>
+   	<div class="main">
+   		<div class="logo">
+   			<img id="logo" src="logo.jpg">
+   		</div>
+   		<div class="input">
+   			<div id="state">
+   				<div id="enter-1"> Select State </div>
+		   			<select class = "search" id="states">
+				   		<option value="" disabled selected>Select State </option>
+					</select>
+				</div>
+			<div id="district">
+		   		<div id="enter-2"> Select District  </div>
+		   			<select class = "search" id="districts">
+						<option value="" disabled selected>Select Districts</option>
+					</select>
+		   		</div>
+		</div>
+		   <div class="confirmed">
+				<div> Confirmed </div>
+				<div id="confirmed_id" class="ib"> 000000 </div>
+					(+<span id="confirmed_delta"> 00 </span>)
+			</div>
+			<div class="recover">
+				<div> Recover </div>
+				<div id="recover_id" class="ib"> 000000 </div>
+				(+<span id="recover_delta"> 00</span>)
+			</div>
+			<div class="active">
+				<div> Active Cases </div>
+				<div id="active_id" class="ib"> 000000 </div>
+			</div>
+			<div class="death">
+				<div> Death </div>
+				<div id="death_id" class="ib"> 000000 </div>
+				(+<span id="death_delta"> 00 </span>)
+			</div>
+			<div class="info">
+				<div> Developed By :Unnayan Krishna Bharadwaj </div>
+				
+
+			</div>
+   		</div>
+		   <script src="app.js"></script>
+</body>
+</html>

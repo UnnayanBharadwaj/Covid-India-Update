@@ -82,7 +82,7 @@ function showData(data) {
     console.log(data, data.delta)
     loader(delta_confirmed, data.delta ? data.delta.confirmed : (data.deltaconfirmed | data.delta_confirmed));
     loader(delta_recover,data.delta ? (data.delta.recover | data.delta.recovered) : (data.deltarecovered | data.delta_recovered | data.delta_recover));
-    loader(delta_death,data.delta ? data.delta.deaths : data.deltadeaths);
+    loader(delta_death,data.delta ? data.delta.deaths : (data.deltadeaths| data.delta_death));
 }
 
 function loader(element, value) {

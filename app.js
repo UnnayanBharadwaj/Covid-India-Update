@@ -80,9 +80,9 @@ function showData(data) {
     loader(active, data.active);
     loader(deaths, data.deceased | data.deaths);
     console.log(data, data.delta)
-    loader(delta_confirmed, data.delta ? data.delta.confirmed : (data.daltaconfirmed | data.dalta_confirmed));
-    loader(delta_recover,data.delta ? (data.delta.recover | data.delta.recovered) : (data.daltarecovered | data.dalta_recovered));
-    loader(delta_death,data.delta ? data.delta.deaths : data.daltadeaths);
+    loader(delta_confirmed, data.delta ? data.delta.confirmed : (data.deltaconfirmed | data.delta_confirmed));
+    loader(delta_recover,data.delta ? (data.delta.recover | data.delta.recovered) : (data.deltarecovered | data.delta_recovered | data.delta_recover));
+    loader(delta_death,data.delta ? data.delta.deaths : data.deltadeaths);
 }
 
 function loader(element, value) {

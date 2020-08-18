@@ -95,9 +95,7 @@ body{
 	display: inline-block;
 }
 
-span{
-	
-}
+
 
 .active{
 	border-bottom-color: #f0f057;
@@ -140,6 +138,10 @@ span{
 	.recover,.confirmed,.active,.death {
 		width: 90%;
 	}
+	.main{
+		height: 100vh;
+	}
+	
 }
 
 
